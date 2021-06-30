@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+* {
+  margin: 0 auto;
+}
+.hero-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  background-color: #F7EBEC;
+}
+.main-header {
+  margin: 20px 0px 20px 20px;
+  font-family: inter;
+  color: #1D1E2C;
+  font-size: 48px;
+}
+.hero-home h2 {
+  font-family: comfortaa;
+}
+.purpose {
+  background-color: #AC9FBB;
+}
+.projects {
+  background-color: #DDBDD5;
+  height: 100vh;
+  width: 100vw;
+  font-family: inter;
+}
+.projects-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 30px;
+}
+.web-dev {
+  background-color: white;
+  padding: 30px;
+}
+.graphic-design {
+  background: white;
+  padding: 30px;
+}
+.contact-me {
+  background-color: #1D1E2C;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+}
+.purpose {
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+}
+#purpose-header {
+  padding: 50px;
+  font-family: inter;
+}
+.purpose-text {
+  color: #F7EBEC;
+  font-size: 24px;
+  text-align: center;
+  padding: 43% 0% 60% 0%;
+  font-family: comfortaa;
+}
+
+.circle-container {
+  display: flex;
+}
+.circle {
+  width: 300px;;
+  height: 300px;
+  border-radius: 50%;
+  background: black;
+}
+#c1:hover {
+  background: #F7EBEC;
+  transition: background-color 0.5s ease;
+}
+#c1:hover p {
+  color: black;
+}
+#c2:hover {
+  transition: background-color 0.5s ease;
+  background: #fffbd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(40deg, #fffbd5, #b20a2c); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(40deg, #fffbd5, #b20a2c);
+}
+#c3:hover {
+  background: -webkit-linear-gradient(320deg, #ffffff, #000000)
+}
+
+/* Project Carousels */
+.webNav {
+  text-align: center;
+}
+#prevBtn {
+  display: block;
+  float: left;
+  text-size: 24px;
+}
+#nextBtn {
+  display: block;
+  float: right;
+}
+
+.graphicScroller {
+  text-align: center;
+}
+.contact-me {
+  font-family: inter;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 20vh;
+}
+.socials {
+  font-family: 'Roboto Mono', monospace;
+  display: inline-block;
+  
+}
+.icons {
+  display: grid;
+}
+
+
+
+
