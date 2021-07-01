@@ -32,6 +32,9 @@
   width: 100vw;
   font-family: inter;
 }
+.projects h1 {
+  text-align: center;
+}
 .projects-container {
   display: grid;
   grid-template-columns: auto auto;
