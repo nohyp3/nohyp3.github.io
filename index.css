@@ -126,6 +126,18 @@
 .icons {
   display: grid;
 }
+a{
+  text-decoration: none;
+  color: white;
+}
+a:visited{
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  color: #fa8072;
+}
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
@@ -161,8 +173,9 @@
       width: 100vw;
       margin: 0 auto;
     }
+    .socials {
+      height: 100%;
+    }
 }
-
-
 
 
