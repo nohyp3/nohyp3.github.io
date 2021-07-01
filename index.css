@@ -126,6 +126,42 @@
 .icons {
   display: grid;
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .circle-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .projects {
+      background-color: #DDBDD5;
+      height: 100%;
+      width: 100vw;
+      font-family: inter;
+    }
+    .projects-container {
+      display: flex;
+      flex-direction: column;
+      margin: 30px;
+    }
+    .circle-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .circle {
+      width: 300px;;
+      height: 300px;
+      border-radius: 50%;
+      background: black;
+    }
+    .purpose {
+      height: 100%;
+      width: 100vw;
+      margin: 0 auto;
+    }
+}
 
 
 
