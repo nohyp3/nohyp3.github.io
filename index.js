@@ -38,9 +38,9 @@ var webProj= [
   //graphic design carousel 
   var graphicProj= [
     {
-      name: "Project 1",
-     img: "https://media.istockphoto.com/vectors/geometric-banner-megaphone-with-coming-soon-bubble-loudspeaker-modern-vector-id1181378326?k=6&m=1181378326&s=612x612&w=0&h=G9QQjvLpHdFmKtHkaRbt08NnGgiDbtxZyR5L629Bck0=",
-     description: "This was my first project!"
+      name: "A Book Mockup",
+     img: "bookmockup.jpg",
+     description: "I designed the cover and spine of this book. I editied a mockup using a photo editor and placed my design in."
     },
     {
       name: "Project 2",
