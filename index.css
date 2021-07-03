@@ -117,8 +117,9 @@
   font-family: inter;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
   padding-top: 20vh;
+  padding-bottom: 10vh;
 }
 .socials {
   font-family: 'Roboto Mono', monospace;
