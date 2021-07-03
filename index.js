@@ -19,6 +19,9 @@ var webProj= [
     img.src = item.img;
     description.textContent = item.description;
   }
+  window.addEventListener('DOMContentLoaded', function(){
+    showProject(currentCard);
+  });
   
   nextBtn.addEventListener('click', function() {
     currentCard++;
@@ -57,6 +60,10 @@ var webProj= [
     imgG.src = itemG.img;
     descriptionG.textContent = itemG.description;
   }
+  window.addEventListener('DOMContentLoaded', function(){
+    showProjectG(currentCardG);
+  });
+
   
   nextBtnG.addEventListener('click', function() {
     currentCardG++;
