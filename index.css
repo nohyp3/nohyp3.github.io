@@ -411,6 +411,38 @@ footer {
       margin-bottom: -30px;
       padding: 10px auto;
     }
+    .web-dev {
+      margin-right: 10px;
+      margin-left: -10px;
+      margin-bottom: 10px;
+    }
+    .graphic-design {
+      margin-bottom: 10px;
+    }
+}
+/* ipad landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    #c1 {
+      background: #F7EBEC;
+      transition: background-color 0.5s ease;
+    }
+    #c1 p {
+      color: black;
+    }
+    #c2 {
+      transition: background-color 0.5s ease;
+      background: #fffbd5; /* fallback for old browsers */
+      background: -webkit-linear-gradient(40deg, #fffbd5, #b20a2c); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(40deg, #fffbd5, #b20a2c);
+    }
+    #c3 {
+      background: -webkit-linear-gradient(320deg, #ffffff, #000000);
+      margin-bottom: 10%;
+    }
 }
 
 
