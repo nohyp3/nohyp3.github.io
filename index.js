@@ -12,6 +12,8 @@ var webProj= [
   const name = document.getElementById("name");
   const img = document.getElementById("img");
   const description = document.getElementById("description");
+  var nextBtn = document.getElementById("nextBtn");
+  var prevBtn = document.getElementById("prevBtn"); 
   let currentCard = 0;
   function showProject(project) {
     const item = webProj[project]
