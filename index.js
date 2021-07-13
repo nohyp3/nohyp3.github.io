@@ -48,9 +48,9 @@ var webProj= [
      description: "I designed the cover and spine of this book. I editied a mockup using a photo editor and placed my design in."
     },
     {
-      name: "Project 2",
-      img: "https://media.istockphoto.com/vectors/geometric-banner-megaphone-with-coming-soon-bubble-loudspeaker-modern-vector-id1181378326?k=6&m=1181378326&s=612x612&w=0&h=G9QQjvLpHdFmKtHkaRbt08NnGgiDbtxZyR5L629Bck0=",
-      description: "This was my second project!" 
+      name: "Space Agency Badge",
+      img: "Untitled-2.jpg",
+      description: "I created this space agency badge using vectors within Adobe Illustrator" 
     }];
   const nameG = document.getElementById("nameG");
   const imgG = document.getElementById("imgG");
