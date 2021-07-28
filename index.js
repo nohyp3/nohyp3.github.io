@@ -51,6 +51,11 @@ var webProj= [
       name: "Space Agency Badge",
       img: "Untitled-2.jpg",
       description: "I created this space agency badge using vectors within Adobe Illustrator" 
+    },
+    {
+      name: "befree Vector Art",
+      img: "befree-01.jpg",
+      description: "I created this vector art using Adobe Illustrator as well"
     }];
   const nameG = document.getElementById("nameG");
   const imgG = document.getElementById("imgG");
