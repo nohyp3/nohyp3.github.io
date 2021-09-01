@@ -1,8 +1,8 @@
 var webProj= [
     {
-      name: "Project 1",
-     img: "https://media.istockphoto.com/vectors/geometric-banner-megaphone-with-coming-soon-bubble-loudspeaker-modern-vector-id1181378326?k=6&m=1181378326&s=612x612&w=0&h=G9QQjvLpHdFmKtHkaRbt08NnGgiDbtxZyR5L629Bck0=",
-     description: "This was my first project!"
+      name: "bluebinpackaging",
+     img: "bluebin.png",
+     description: "A simple site I made to help Canadians put packaging in the right bins https://kind-tree-07296850f.azurestaticapps.net/"
     },
     {
       name: "Project 2",
