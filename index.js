@@ -1,17 +1,20 @@
 var webProj= [
     {
       name: "bluebinpackaging",
-     img: "bluebin.png",
-     description: "A simple site I made to help Canadians put packaging in the right bins https://kind-tree-07296850f.azurestaticapps.net/"
+     img: "bluebin.PNG",
+     description: "A simple site I made to help Canadians put packaging in the right bins",
+     link: "https://kind-tree-07296850f.azurestaticapps.net/"
     },
     {
       name: "Project 2",
       img: "https://media.istockphoto.com/vectors/geometric-banner-megaphone-with-coming-soon-bubble-loudspeaker-modern-vector-id1181378326?k=6&m=1181378326&s=612x612&w=0&h=G9QQjvLpHdFmKtHkaRbt08NnGgiDbtxZyR5L629Bck0=",
-      description: "This was my second project!" 
+      description: "This was my second project!", 
+      link: "https://Andreke.me"
     }];
   const name = document.getElementById("name");
   const img = document.getElementById("img");
   const description = document.getElementById("description");
+  const link = document.getElementById("site-link")
   var nextBtn = document.getElementById("nextBtn");
   var prevBtn = document.getElementById("prevBtn"); 
   let currentCard = 0;
@@ -20,6 +23,7 @@ var webProj= [
     name.textContent = item.name;
     img.src = item.img;
     description.textContent = item.description;
+    link.setAttribute('href', item.link);
   }
   window.addEventListener('DOMContentLoaded', function(){
     showProject(currentCard);
