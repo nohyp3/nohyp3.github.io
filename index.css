@@ -82,19 +82,21 @@
 }
 #c1:hover {
   background: #F7EBEC;
-  transition: background-color 0.5s ease;
+  transition: background-color 1s ease;
 }
 #c1:hover p {
   color: black;
 }
 #c2:hover {
-  transition: background-color 0.5s ease;
-  background: #fffbd5; /* fallback for old browsers */
-  background: -webkit-linear-gradient(40deg, #fffbd5, #b20a2c); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(40deg, #fffbd5, #b20a2c);
+  background: #ee4266;
+  transition: background-color 1s ease;
 }
 #c3:hover {
-  background: -webkit-linear-gradient(320deg, #ffffff, #000000)
+  background: #b5ffe9;
+  transition: background-color 1s ease;
+}
+#c3:hover p {
+  color: black;
 }
 
 /* Project Carousels */
