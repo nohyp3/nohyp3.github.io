@@ -6,10 +6,10 @@ var webProj= [
      link: "https://kind-tree-07296850f.azurestaticapps.net/"
     },
     {
-      name: "Project 2",
+      name: "Business Basics",
       img: "https://media.istockphoto.com/vectors/geometric-banner-megaphone-with-coming-soon-bubble-loudspeaker-modern-vector-id1181378326?k=6&m=1181378326&s=612x612&w=0&h=G9QQjvLpHdFmKtHkaRbt08NnGgiDbtxZyR5L629Bck0=",
-      description: "This was my second project!", 
-      link: "https://Andreke.me"
+      description: "A site to teach the basics of business at a grade 10 level", 
+      link: "https://salmon-moss-0d4268910.azurestaticapps.net"
     }];
   const name = document.getElementById("name");
   const img = document.getElementById("img");
