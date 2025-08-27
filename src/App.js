@@ -5,6 +5,7 @@ import github from './icons/github.svg';
 import react from './icons/react.svg';
 import Slide from 'react-reveal/Slide';
 import airQualityImg from './images/air_quality.jpeg';
+import cdis from './images/cdis.png'
 import navigationAssistantImg from './images/navigation_assistant.jpg';
 
 function Project(project) {
@@ -46,8 +47,55 @@ function HardwareSection({hardwareData}) {
     </section>
   );
 }
+function ResearchSection({researchData}) {
+  return (
+    <section className="research-list">
+      <h1 className="header">Research</h1>
+      <div className="project-list">
+        {researchData.map((project) => (
+          <Slide right>
+            <Project {...project} />
+          </Slide>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function JustForFunSection({funData}) {
+  return (
+    <section className="just-for-fun">
+      <h1 className="header">Just for Fun</h1>
+      <div className="fun-facts-grid" style={{marginTop: "2em"}}>
+        {funData.map((item, index) => (
+          <Slide up key={index}>
+            <div className="fun-fact-card" style={{alignContent: "start"}}>
+              <h3>{item.title}</h3>
+              <p style={{marginBottom: "1em"}}>{item.description}</p>
+              {item.link && (
+                <a href={item.link} target="_blank" rel="noreferrer" className="project-link">
+                  Check it out
+                </a>
+              )}
+            </div>
+          </Slide>
+        ))}
+      </div>
+    </section>
+  );
+}
 function App() {
   const projectsData = [
+    {
+      name: "Shelter",
+      description: "A full-stack ESG analyzer for ESG document releases from publically traded companies. Insert the link to the ESG report PDF to see scores for Environmental and Social Governance. Utilized Next.js, React, TypeScript and Tailwind to create the front end. In the back end, Cheerio, Axios, Tensor Flow, and Natural.js was used to analyze the reports.",
+      link: "https://shelter-ecru.vercel.app/"
+    },
+    {
+      name: "ESG Analyzer",
+      description: "A full-stack ESG analyzer for ESG document releases from publically traded companies. Insert the link to the ESG report PDF to see scores for Environmental and Social Governance. Utilized Next.js, React, TypeScript and Tailwind to create the front end. In the back end, Cheerio, Axios, Tensor Flow, and Natural.js was used to analyze the reports.",
+      link: "https://github.com/nohyp3/esg-analyzer"
+    },
     {
       name: "BlockBrain",
       description:"A full-stack blockchain learning platform that incentivizes users with NFTs. Uses Cohere AI to grade answers that test user's understanding of content. Built using React, ChakraUI, Express, and MongoDB.",
@@ -77,8 +125,6 @@ function App() {
       link: "https://github.com/nohyp3/youthfi",
 
     },
-
-    // Add more projects as needed
   ];
   const hardwareData = [
     {
@@ -93,8 +139,27 @@ function App() {
       link: "https://github.com/nohyp3/ultravision",
       //image: navigationAssistantImg
     },
-    // Add more hardware projects as needed
   ];
+  const researchData = [
+    {
+      name: "MRI Imaging with Synthetic Correlated Diffusion Imaging",
+      description: "Utitilized the CDIs imaging algorithm on human MRI scans to highlight potentially tumerous areas",
+      link: "https://github.com/catai9/BrainCDIs",
+      image: cdis
+    }
+  ]
+
+  const funData = [
+    {
+      title: "👁️ Open CV ",
+      description: "Created a program to manipulate images (turing image grayscale, rotating, detecting edges) using Open CV. Also implemented a prewitt operator to manually detect edges in an image without the OpenCV library"
+    },
+    {
+      title: "🏊 Swimming",
+      description: "I used to be a swim instructor and lifeguard. I also swim in my free time."
+    }
+  ]
+
   return (
     <div className="App">
       <div className="hero-home">
@@ -112,6 +177,8 @@ function App() {
         <h1 className="header">Projects</h1>
         <ProjectsSection projectsData={projectsData} />
         <HardwareSection hardwareData={hardwareData} />
+        <ResearchSection researchData={researchData} />
+        <JustForFunSection funData={funData} />
       </div>
       <div className="footer">
         <p>Built With</p> <img src={react}></img>
