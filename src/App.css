@@ -262,6 +262,50 @@ footer {
   padding-bottom: 2em;
 }
 
+.research-list {
+  background-color: #fffbd5;
+  padding-bottom: 2em;
+}
+
+.just-for-fun {
+  background-color: #f0f8ff;
+  padding: 2em 0;
+}
+
+.fun-facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5em;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+.fun-fact-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #4CAF50;
+  transition: transform 0.3s ease;
+}
+
+.fun-fact-card:hover {
+  transform: translateY(-5px);
+}
+
+.fun-fact-card h3 {
+  color: #333;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+.fun-fact-card p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
 .project-image {
   display: block;
   max-width: 100%;
