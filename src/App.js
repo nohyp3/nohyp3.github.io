@@ -100,6 +100,11 @@ function JustForFunSection({funData}) {
 function App() {
   const projectsData = [
     {
+      name: "Remote Operated Semantic Sketching",
+      description: "A robot to help the visually impaired experience art through the sense of touch and sound. Winner of Hack the North 2025.",
+      link: "https://devpost.com/software/ross-42pnvi"
+    },
+    {
       name: "Shelter",
       description: "A full-stack ESG analyzer for ESG document releases from publically traded companies. Insert the link to the ESG report PDF to see scores for Environmental and Social Governance. Utilized Next.js, React, TypeScript and Tailwind to create the front end. In the back end, Cheerio, Axios, Tensor Flow, and Natural.js was used to analyze the reports.",
       link: "https://shelter-ecru.vercel.app/"
