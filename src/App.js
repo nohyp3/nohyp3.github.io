@@ -13,9 +13,22 @@ function Project(project) {
         <h1 className = "project-name">{project.name}</h1>
         <p className = "project-description">{project.description}</p>
         {project.image && <img src={project.image} alt={project.name} className="project-image" />}
-        <a href={project.link} target="_blank" rel="noreferrer">
-          <button className = "project-link">Link</button>
-        </a>
+        {project.video && (
+          <iframe 
+            className="project-video"
+            src={project.video}
+            title={project.name}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        )}
+        {project.link !== "" && (
+          <a href={project.link} target="_blank" rel="noreferrer">
+            <button className = "project-link">Link</button>
+          </a>
+        )}
+        
     </div>
   )
 }
@@ -81,6 +94,12 @@ function App() {
     // Add more projects as needed
   ];
   const hardwareData = [
+    {
+      name: "Bicep Curl Detector",
+      description: "A device that detects when a bicep curl has been done utilizing electrodes, an instrumentation amplifier, bandpass filtering, signal wave rectifying, and an arduino.",
+      video: "https://www.youtube.com/embed/kHo0N8l3csQ",
+      link: ""
+    },
     {
       name: "Solar Powered Air Quality Monitor",
       description: "An IoT device that reports air quality data from a BME680 sensor and sends it to a web dashboard. Used a Raspberry Pi Pico to read sensor data and host the dashboard locally. Utilized a solar panel, two rechargeable batteries, and a TP4056 battery charge board to power the Pico and the Sensor.",
